@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti|Open+Sans+Condensed:300,700|Open+Sans:400,800');
+
+$clara: #ED7801;
+$escura: #762823;
+$branco: #FFF;
+
+$titulo: "Open Sans Condensed", "Open Sans", Tahoma;
+$texto: "Open Sans", Tahoma;
+
+p {
+	color: $clara;
+	font: 14px $texto;
+}
+
+a {
+	text-decoration: none;
+	color: $clara;
+}
+
+h1 {
+	color: $escura;
+	font: 36px $titulo;
+}
+
+h2 {
+	color: $escura;
+	font: 24px $titulo;
+}
+
+h3 {
+	color: $escura;
+	font: 18px $titulo;
+	min-width: 70px;
+}
+
+input {
+	font-size: 14px;
+	min-width: 50%;
+}
+
+textarea{
+	font-size: 14px;
+	min-width: 50%;	
+}
+
+footer{
+	background-color: $escura;
+	padding-right: 50px;
+	color:  $clara;
+	font-size: 40px;
+
+	.linha {
+		font-size: 56px;
+	}
+}
+
+nav {
+	ul {
+		float: right;
+		margin: 30px 10px;
+		li {
+			display: inline;
+			a {
+				color: $clara;
+				text-decoration: none;
+				padding: 10px 20px;
+				font: 18px $titulo;
+				transition: all 0.5s;
+				font-weight: 700;
+				&:hover {
+					background: $escura;
+				}
+			}
+		}
+	}
+}
+
+header {
+	background: url(../images/header.jpg);
+	width: 100%;
+	height: 600px;
+}
+
+body {
+	margin: 0;
+}
+
+.logo {
+	margin: 10px;
+	float: left;
+}
+
+.msg {
+	float: left;
+	width: 400px;
+	background: rgba( 0, 0, 0, 0.3 );
+	text-align: center;
+	margin: 50px;
+	padding: 20px;
+	border-radius: 5px;
+	p {
+		color: $branco;
+	}
+}
+
+.max {
+	float: right;
+	margin: -50px 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+.rigth {
+	text-align: right;
+}
+
+.titulo {
+	background: $escura;
+	text-align: center;
+	padding: 20px 0;
+	h1 {
+		color: $clara;
+	}
+}
+
+.container {
+	width: 960px;
+	margin: auto;
+}
+
+.linha {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item {
+	flex: 1;
+	border: 1px solid #ccc;
+	margin: 5px;
+	text-align: center;
+	transition: all 0.5s;
+	&:hover {
+		border-color: $escura;
+	}
+	img {
+		width: 160px;
+	}
+	i {
+		font-size: 50px;
+		color: $escura;
+		margin: 20px;
+	}
+}
+
+.buttonEnviar {
+	background-color: gray;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#local {
+	background: url(../images/fogo.jpg) fixed no-repeat;
+	padding: 40px 0;
+	float: left;
+	width: 100%;
+	background-size: cover;
+}
+
+#menu {
+	border: 1px solid $escura;
+	color: $escura;
+	padding: 10px;
+	float: right;
+	margin: 20px;
+	display: none;
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+	nav ul {
+		width: 100%;
+		float: left;
+		background: $branco;
+		display: none;
+		li {
+			display: block;
+			a {
+				padding: 20px 0;
+				font-size: 20px;
+				float: left;
+				width: 100%;
+			}
+		}
+	}
+
+	#menu {
+		display: block;
+	}
+
+	.container {
+		width: 400px;
+	}
+
+	.msg {
+		width: 350px;
+		padding: 10px;
+	}
+
+	.max {
+		display: none;
+	}
+
+	section, main {
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+
+}

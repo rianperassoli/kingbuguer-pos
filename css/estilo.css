@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Calligraffitti|Open+Sans+Condensed:300,700|Open+Sans:400,800");
+p {
+  color: #ED7801;
+  font: 14px "Open Sans", Tahoma; }
+
+a {
+  text-decoration: none;
+  color: #ED7801; }
+
+h1 {
+  color: #762823;
+  font: 36px "Open Sans Condensed", "Open Sans", Tahoma; }
+
+h2 {
+  color: #762823;
+  font: 24px "Open Sans Condensed", "Open Sans", Tahoma; }
+
+h3 {
+  color: #762823;
+  font: 18px "Open Sans Condensed", "Open Sans", Tahoma;
+  min-width: 70px; }
+
+input {
+  font-size: 14px;
+  min-width: 50%; }
+
+textarea {
+  font-size: 14px;
+  min-width: 50%; }
+
+footer {
+  background-color: #762823;
+  padding-right: 50px;
+  color: #ED7801;
+  font-size: 40px; }
+  footer .linha {
+    font-size: 56px; }
+
+nav ul {
+  float: right;
+  margin: 30px 10px; }
+  nav ul li {
+    display: inline; }
+    nav ul li a {
+      color: #ED7801;
+      text-decoration: none;
+      padding: 10px 20px;
+      font: 18px "Open Sans Condensed", "Open Sans", Tahoma;
+      transition: all 0.5s;
+      font-weight: 700; }
+      nav ul li a:hover {
+        background: #762823; }
+
+header {
+  background: url(../images/header.jpg);
+  width: 100%;
+  height: 600px; }
+
+body {
+  margin: 0; }
+
+.logo {
+  margin: 10px;
+  float: left; }
+
+.msg {
+  float: left;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 5px; }
+  .msg p {
+    color: #FFF; }
+
+.max {
+  float: right;
+  margin: -50px 20px; }
+
+.clear {
+  clear: both; }
+
+.center {
+  text-align: center; }
+
+.rigth {
+  text-align: right; }
+
+.titulo {
+  background: #762823;
+  text-align: center;
+  padding: 20px 0; }
+  .titulo h1 {
+    color: #ED7801; }
+
+.container {
+  width: 960px;
+  margin: auto; }
+
+.linha {
+  display: flex;
+  flex-wrap: wrap; }
+
+.item {
+  flex: 1;
+  border: 1px solid #ccc;
+  margin: 5px;
+  text-align: center;
+  transition: all 0.5s; }
+  .item:hover {
+    border-color: #762823; }
+  .item img {
+    width: 160px; }
+  .item i {
+    font-size: 50px;
+    color: #762823;
+    margin: 20px; }
+
+.buttonEnviar {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; }
+
+#local {
+  background: url(../images/fogo.jpg) fixed no-repeat;
+  padding: 40px 0;
+  float: left;
+  width: 100%;
+  background-size: cover; }
+
+#menu {
+  border: 1px solid #762823;
+  color: #762823;
+  padding: 10px;
+  float: right;
+  margin: 20px;
+  display: none; }
+
+@media (min-width: 480px) and (max-width: 800px) {
+  nav ul {
+    width: 100%;
+    float: left;
+    background: #FFF;
+    display: none; }
+    nav ul li {
+      display: block; }
+      nav ul li a {
+        padding: 20px 0;
+        font-size: 20px;
+        float: left;
+        width: 100%; }
+
+  #menu {
+    display: block; }
+
+  .container {
+    width: 400px; }
+
+  .msg {
+    width: 350px;
+    padding: 10px; }
+
+  .max {
+    display: none; }
+
+  section, main {
+    width: 100%; } }
+
+/*# sourceMappingURL=estilo.css.map */
